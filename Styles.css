@@ -1,0 +1,299 @@
+/* Diseño logo */
+@font-face {
+    font-family: 'ScriptLogo';
+    src: local('Brush Script MT'), local('Comic Sans MS');
+}
+
+.logo {
+    background-color: black;
+    padding: 5px 20px;
+    display: inline-block;
+}
+
+.logo {
+    font-family: 'ScriptLogo', cursive;
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+}
+
+
+/* Estilo de las imágenes con efecto hover */
+.related-product-card {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.related-product-card:hover {
+    transform: scale(1.1); /* Agranda la imagen */
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.product-image:hover {
+    transform: scale(1.1); /* Agranda la imagen */
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .productos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto {
+        width: 100%;
+    }
+}
+
+/* Sección de contacto: ajusta el espacio alrededor de la sección y le da un color de fondo suave */
+.contacto {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Título de la sección de contacto */
+.contacto h2 {
+    margin-bottom: 1rem;
+}
+
+/* Estilos del formulario */
+form {
+    /* Limita el ancho máximo del formulario y lo centra */
+    max-width: 400px;
+    margin: 0 auto;
+    /* Organiza los elementos del formulario en una columna */
+    display: flex;
+    flex-direction: column;
+    /* Añade espacio entre los elementos del formulario */
+    gap: 1rem;
+}
+
+/* Estilos para las etiquetas de los campos */
+form label {
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Estilos para los campos de entrada y el área de texto */
+form input,
+form textarea {
+    /* Añade espacio interior en los campos */
+    padding: 0.5rem;
+    /* Borde gris claro y esquinas redondeadas */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* Ancho completo para ajustarse a la forma */
+    width: 100%;
+    /* Ajusta el tamaño de fuente para que sea consistente */
+    font-size: 1rem;
+}
+
+/* Estilo del borde de los campos cuando están enfocados */
+form input:focus,
+form textarea:focus {
+    border-color: #333; /* Cambia el color del borde */
+    outline: none; /* Elimina el borde adicional del navegador */
+}
+
+/* Estilos para el botón de envío */
+form button {
+    /* Tamaño del botón y color de fondo oscuro */
+    padding: 0.75rem;
+    background-color: #000000;
+    color: #fff;
+    /* Sin borde, esquinas redondeadas y puntero de mano para interacción */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Estilo de hover para el botón de envío */
+form button:hover {
+    background-color: #555; /* Cambia el color al pasar el cursor */
+}
+.option-row button {
+    /* Tamaño del botón y color de fondo oscuro */
+    padding: 0.40rem;
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    /* Sin borde, esquinas redondeadas y puntero de mano para interacción */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.option-row span {
+    padding: 0.60rem;
+    font-size: 1.10rem;
+    text-align: center;
+}
+
+.product-title {
+    padding: 1rem;
+    background-color: #1f1e1e;
+    color: #ffffff;
+    border: black;
+    border-radius: 50px;
+    font-size: 4rem;
+}
+.Items-Relacionados {
+    padding: 0.6rem;
+    background-color: #989898;
+    text-align: center;
+    color: #000000;
+    border: black;
+    border-radius: 50px;
+    word-spacing: 10px;
+}
+.boton-container button {
+    /* Tamaño del botón y color de fondo oscuro */
+    padding: 0.60rem;
+    text-align: center;
+    background-color: #989898;
+    color: black;
+    /* Sin borde, esquinas redondeadas y puntero de mano para interacción */
+    border: none;
+    border-radius: 5px;
+    cursor: default;
+    font-size: 1rem;
+}
+
+.price h2 {
+    text-decoration: underline;
+}
+
+.price p {
+    font-size: 1.15rem;
+}
+
+.contacto00 {
+    padding: 1rem;
+    background-color: #989898;
+    color: #000000;
+    border: black;
+    border-radius: 50px;
+    font-size: 2rem;
+}
+
+.logo {
+    color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.more-info-btn {
+    /* Tamaño del botón y color de fondo oscuro */
+    padding: 0.40rem;
+    text-align: center;
+    color: #ffffff;
+    /* Sin borde, esquinas redondeadas y puntero de mano para interacción */
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/*Estilo carrito de compras*/
+.cartBtn {
+    width: 155px;
+    height: 50px;
+    border: none;
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    color: white;
+    font-weight: 500;
+    position: relative;
+    background-color: #6466af;
+    box-shadow: 0 20px 30px -7px rgba(27, 27, 27, 0.219);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .cart {
+    z-index: 2;
+  }
+  
+  .cartBtn:active {
+    transform: scale(0.96);
+  }
+  
+  .product {
+    position: absolute;
+    width: 12px;
+    border-radius: 3px;
+    content: "";
+    left: 23px;
+    bottom: 23px;
+    opacity: 0;
+    z-index: 1;
+    fill: rgb(211, 211, 211);
+  }
+  
+  .cartBtn:hover .product {
+    animation: slide-in-top 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-30px);
+      opacity: 1;
+    }
+  
+    100% {
+      transform: translateY(0) rotate(-90deg);
+      opacity: 1;
+    }
+  }
+  
+  .cartBtn:hover .cart {
+    animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  
+  @keyframes slide-in-left {
+    0% {
+      transform: translateX(-10px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+.cartBtn {
+    margin-left: auto; /* Mueve el botón hacia la derecha */
+    margin-right: 0; /* Asegura que no tenga margen a la derecha */
+    display: block; /* Necesario para que el margen funcione correctamente */
+}
+
+/* Pie de página */
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
